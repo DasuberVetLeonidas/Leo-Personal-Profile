@@ -1,7 +1,7 @@
 # Shijia (Leo) Zhou
 
 <p align="center">
-  <img src="./Family%20Photo%20of%202023.jpg" width="75%">
+  <img src="./Pictures/Profile%20Photo.png" width="50%">
 </p>
 
 ✉️ **Email:** [shijia.zhou@sydney.edu.au](mailto:shijia.zhou@sydney.edu.au)
