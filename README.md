@@ -63,7 +63,8 @@
 |-------------------------------------|-------------------------------------------------|
 | Cup Grand Touring Cars Simulation Racing | - Assetto Corsa<br>- Assetto Corsa Competizione<br>- Gran Turismo 7 |
 | Astrophotography                    | - Astrobin Profile: <a href="https://www.astrobin.com/users/DasUberLeoIrene/" target="_blank">Link to profile</a> |
-| Fishing                             | -                                                 |
+| Analog Photography                  | - 645 Format                                      |
+| Fishing                             | - In-shore and beach fishing                      |
 
 ---
 
