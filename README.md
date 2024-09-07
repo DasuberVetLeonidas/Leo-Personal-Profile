@@ -84,7 +84,8 @@ _Supervisor:_ Prof Jinman Kim, Tanya Baldacchino
 ## Publications
 
 ### Conference Publications
-- Zhou, S. et al. (2023). "Improving Automatic Fetal Biometry Measurement with Swoosh Activation Function." In: Greenspan, H., et al. _Medical Image Computing and Computer Assisted Intervention – MICCAI 2023._ Lecture Notes in Computer Science, vol 14226. Springer, Cham. [https://doi.org/10.1007/978-3-031-43990-2_27](https://doi.org/10.1007/978-3-031-43990-2_27)
+- Zhou, S. et al. (2023). "Improving Automatic Fetal Biometry Measurement with Swoosh Activation Function." In: Greenspan, H., et al. _Medical Image Computing and Computer Assisted Intervention – MICCAI 2023._ Lecture Notes in Computer Science, vol 14226. Springer, Cham. [https://doi.org/10.1007/978-3-031-43990-2_27](https://doi.org/10.1007/978-3-031-43990-2_27)  
+  **GitHub Repository:** [Swoosh Activation Function](https://github.com/DasuberVetLeonidas/SwooshActivationFunction)
 
 - S. Zhou et al., "A Deep-Learning Enabled Automatic Fetal Thalamus Diameter Measurement Algorithm," 2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), Sydney, Australia, 2023, pp. 1-5. [doi: 10.1109/EMBC40787.2023.10340980](https://doi.org/10.1109/EMBC40787.2023.10340980).
 
