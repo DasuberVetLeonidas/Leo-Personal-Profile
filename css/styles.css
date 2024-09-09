@@ -33,7 +33,7 @@ hr {
   border: dotted #F3F4F6 6px; /* Background Color: Soft Blue Gray */
   border-bottom: none;
   width: 4%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 a {
@@ -183,7 +183,7 @@ a:hover {
 .slideshow-container {
   position: relative;
   max-width: 95%;
-  margin: 50px auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 

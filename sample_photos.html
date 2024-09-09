@@ -90,36 +90,35 @@
         </div>
 
     </div>
-
         
-<div class="btn-container">
-    <a class="btn" href="index.html">RETURN</a>
-</div>
+    <div class="btn-container">
+        <a class="btn" href="index.html">RETURN</a>
+    </div>
 
-<div class="bottom-container">
-    <p class="copyright">© 2024 Shijia Zhou @ BDAV USYD.</p>
-</div>
+    <div class="bottom-container">
+        <p class="copyright">© 2024 Shijia Zhou @ BDAV USYD.</p>
+    </div>
 
-<script>
-    let slideIndex = 0;
-    let slideInterval;
+    <script>
+        let slideIndex = 0;
+        let slideInterval;
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            slideInterval = setTimeout(showSlides, 15000); // Change image every 15 seconds
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
-        slideInterval = setTimeout(showSlides, 15000); // Change image every 15 seconds
-    }
 
-    // Initialize the slideshow
-    showSlides();
+        // Initialize the slideshow
+        showSlides();
 
-</script>
+    </script>
 
 </body>
 
