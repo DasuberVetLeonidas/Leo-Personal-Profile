@@ -19,14 +19,25 @@
         </div>
         <img class="middle-icon" src="images/fishing.svg" alt="fishing">
         <img class="left-icon" src="images/telescope.png" alt="telescope">
+        <div class="font-size-controls">
+            <button class="font-size-btn" onclick="changeFontSize('small')">Small</button>
+            <button class="font-size-btn" onclick="changeFontSize('large')">Large</button>
+        </div>
     </div>
+    
 
     <div class="middle-container">
         <div class="profile">
-            <img class="profile-img" src="./images/profile_photo.png" alt="profile-img">
-            <h2>Hello!</h2>
-            <p class="intro">I am a researcher with a background in veterinary science and engineering. Currently, I’m pursuing my PhD in Engineering & IT at the University of Sydney. I specialise in telehealth technologies, machine learning, and patient onboarding systems.</p>
+            <div class="text-content">
+                <h2>Hello!</h2>
+                <p class="intro">I am a researcher with a background in veterinary science and engineering. Currently, I’m pursuing my PhD in Engineering & IT at the University of Sydney. I specialise in telehealth technologies, machine learning, and patient onboarding systems.</p>
+            </div>
+            <div class="proverb-container">
+                <img class="proverb-img" src="./images/Proverbs_1.5.png" alt="Proverbs 1:5">
+                <p class="copyright">© YouVersion</p>
+            </div>
         </div>
+        
 
         <hr>
 
@@ -92,7 +103,11 @@
                         <td>Zhou, S. et al.</td>
                         <td>2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</td>
                         <td>2023</td>
-                        <td><a href="https://doi.org/10.1109/EMBC40787.2023.10340980" target="_blank">DOI Link</a></td>
+                        <td>
+                            <a href="https://doi.org/10.1007/978-3-031-43990-2_27" target="_blank">DOI Link</a>
+                            <br>
+                            <a href="https://github.com/DasuberVetLeonidas/SwooshActivationFunction" target="_blank">GitHub</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Genetic cause for congenital methemoglobinemia in an Australian Pomeranian dog</td>
@@ -284,7 +299,7 @@
                     </tr>
                     <tr>
                         <td>General Photography</td>
-                        <td><a href="sample_photos.html">Gallery</a></td>
+                        <td><a href="gallery.html">Gallery</a></td>
                     </tr>
                     <tr>
                         <td>Fishing</td>
@@ -306,7 +321,8 @@
     <div class="bottom-container">
         <a class="footer-link" href="https://github.com/DasuberVetLeonidas">GitHub</a>
         <p class="copyright">© 2024 Shijia Zhou @ BDAV USYD.</p>
-  </div>
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
+/* Base font size for the body */
 body {
+  font-size: 16px; /* Default font size */
+  transition: font-size 0.3s ease;
   color: #1F2937; /* Text Color: Dark Navy */
   margin: 0;
   text-align: center;
@@ -78,7 +81,7 @@ a:hover {
 }
 
 .intro {
-  width: 30%;
+  width: 68.4%;
   margin: auto;
 }
 
@@ -95,9 +98,9 @@ a:hover {
 
 .right-icon {
   position: absolute;
-  right: 150px;
-  top: 40px;
-  height: 125px;
+  right: 50px;
+  top: 60px;
+  height: 100px;
 }
 
 .left-icon {
@@ -113,6 +116,89 @@ a:hover {
   transform: translateX(-50%) translateX(10px); /* Offset by 10px to the right */
   top: 30px;
   height: 100px;
+}
+
+
+/* Media Queries for different breakpoints */
+@media (max-width: 1200px) {
+  /* Shrink icons */
+  .right-icon, .left-icon, .middle-icon {
+    height: 90px;
+  }
+  /* Adjust font size for h1 and h2 */
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Further shrinking of icons */
+  .right-icon, .left-icon, .middle-icon {
+    height: 75px;
+  }
+  /* Adjust font size for h1 and h2 */
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Shrink icons for tablets */
+  .right-icon, .left-icon, .middle-icon {
+    height: 60px;
+  }
+  /* Adjust font size for h1 and h2 */
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Shrink icons for mobile devices */
+  .right-icon, .left-icon, .middle-icon {
+    height: 45px;
+  }
+  /* Adjust font size for h1 and h2 */
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Media Queries for different breakpoints */
+@media (max-width: 1200px) {
+  .text {
+    font-size: 1.5vw; /* Relative to viewport width */
+  }
+}
+
+@media (max-width: 992px) {
+  .text {
+    font-size: 1.3vw; /* Relative to viewport width */
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.1vw; /* Relative to viewport width */
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 0.9vw; /* Relative to viewport width */
+  }
 }
 
 .code-img {
@@ -131,8 +217,53 @@ a:hover {
   width: 38.2%;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 0px;
+  max-width: 800px; /* Adjust max-width to better fit vertical layout */
+  margin: 0 auto; /* Center the profile section on the page */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.text-content {
+  width: 100%; /* Ensure the text takes the full width */
+  margin-bottom: 40px; /* Add space between the text and proverb image */
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
+}
+
+.proverb-container {
+  width: 100%; /* Ensure the container takes the full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image and text */
+  box-sizing: border-box;
+}
+
+.proverb-img {
+  width: 50%; /* Reduce the width for a balanced layout */
+  height: auto;
+  object-fit: contain;
+}
+
+.copyright {
+  font-size: 0.75rem; /* Small font size for copyright notice */
+  color: #888;
+  margin-top: 5px; /* Space between image and copyright */
+  text-align: center;
+}
+
+
 .slideshow-img {
-  width: 99%;
+  width: 100%;          /* Make the image fill the container's width */
+  max-width: 1200px;    /* Limit the maximum width to 1200px */
+  max-height: 800px;    /* Limit the maximum height to 800px */
+  height: auto;         /* Maintain aspect ratio */
+  object-fit: contain;  /* Ensure the entire image is visible */
+  margin: 0 auto;       /* Center the image within its container */
 }
 
 .table-bordered {
@@ -179,28 +310,81 @@ a:hover {
   text-decoration: none;
 }
 
-/* Slideshow container */
 .slideshow-container {
   position: relative;
-  max-width: 95%;
+  max-width: 1200px; /* Limit the maximum width */
   margin: 10px auto;
   overflow: hidden;
 }
 
-/* Hide all images by default */
-.mySlides {
-  display: none;
-  width: 100%;
-  height: auto;
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Adjust this if necessary */
+  width: auto;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%); /* Center vertically */
 }
 
-/* Caption text */
-.text {
-  color: #F3F4F6; /* Soft Blue Gray */
-  font-size: 15px;
-  padding: 8px 12px;
+.next {
+  right: 10px; /* Adjust the position from the right edge */
+}
+
+.prev {
+  left: 10px; /* Adjust the position from the left edge */
+}
+
+/* Position buttons under the text */
+.mySlides .text {
+  position: relative;
+  max-width: 100%;
+  max-height: 800px; /* Limit the maximum height */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.next:hover, .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Font size controls styling */
+.font-size-controls {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  top: 20px; /* Positioning it near the top of the container */
+  right: 20px; /* Positioning it near the right of the container */
+}
+
+.font-size-btn {
+  background: #22D3EE; /* Accent Color: Teal Blue */
+  background-image: linear-gradient(to bottom, #22D3EE, #60A5FA); /* Gradient effect */
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.font-size-btn:hover {
+  background: #60A5FA; /* Change to lighter blue on hover */
+  background-image: linear-gradient(to bottom, #60A5FA, #22D3EE); /* Reverse gradient on hover */
+}
+
+/* Update .top-container to account for new element inside */
+.top-container {
+  position: relative;
+  background-color: #F3F4F6; /* Soft Blue Gray */
+  padding-top: 100px;
 }
