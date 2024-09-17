@@ -58,11 +58,17 @@ a:hover {
 
 .middle-container {
   margin: 100px 0;
+  overflow-x: auto;
 }
 
 .bottom-container {
   background-color: #1E3A8A; /* Primary Color: Deep Blue */
   padding: 50px 0 20px;
+}
+
+.top-container, .bottom-container {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .btn-container {
@@ -201,6 +207,16 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .top-container, .bottom-container {
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  .middle-container {
+    margin: 50px 0; /* Adjust margin as needed */
+  }
+}
+
 .code-img {
   width: 25%;
   float: left;
@@ -267,7 +283,8 @@ a:hover {
 }
 
 .table-bordered {
-  width: 85.4%; /* Limit table width to 85.4% of the page width */
+  width: 84.5%;
+  table-layout: auto;
   border-collapse: collapse; /* Ensure borders are collapsed into single lines */
   margin: 0 auto; /* Center the table horizontally */
 }
