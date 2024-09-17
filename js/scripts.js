@@ -3,9 +3,9 @@ function changeFontSize(size) {
     const body = document.body;
 
     if (size === 'small') {
-        body.style.fontSize = '14px';
+        body.style.fontSize = '10px';
     } else if (size === 'large') {
-        body.style.fontSize = '18px';
+        body.style.fontSize = '22px';
     }
 }
 
